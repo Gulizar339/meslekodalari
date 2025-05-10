@@ -1,0 +1,54 @@
+﻿@model CreateSubHeaderDto
+@{
+    ViewData["Title"] = "Yeni Üst Bilgi Ekleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow rounded-4 border-0">
+                <div class="card-header bg-dark text-white rounded-top-4">
+                    <h3 class="mb-0"><i class="bi bi-plus-circle me-2"></i>Yeni Üst Bilgi Ekle</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form method="post">
+                        <div class="mb-4">
+                            <label asp-for="Address" class="form-label fs-5">Adres</label>
+                            <input asp-for="Address" class="form-control form-control-lg" placeholder="Örn: Atatürk Cad. No:10 Elazığ" />
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Email" class="form-label fs-5">Email</label>
+                            <input asp-for="Email" type="email" class="form-control form-control-lg" placeholder="Örn: info@site.com" />
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Facebook" class="form-label fs-5">Facebook</label>
+                            <input asp-for="Facebook" class="form-control form-control-lg" placeholder="https://facebook.com/..." />
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Twitter" class="form-label fs-5">Twitter</label>
+                            <input asp-for="Twitter" class="form-control form-control-lg" placeholder="https://twitter.com/..." />
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Linkedln" class="form-label fs-5">LinkedIn</label>
+                            <input asp-for="Linkedln" class="form-control form-control-lg" placeholder="https://linkedin.com/in/..." />
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Instagram" class="form-label fs-5">Instagram</label>
+                            <input asp-for="Instagram" class="form-control form-control-lg" placeholder="https://instagram.com/..." />
+                        </div>
+
+                        <button type="submit" class="btn btn-dark btn-lg w-100">
+                            <i class="bi bi-save me-2"></i>Kaydet
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
